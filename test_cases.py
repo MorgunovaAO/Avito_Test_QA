@@ -5,7 +5,7 @@ from time import sleep
 from playwright.sync_api import Page, Route, expect
 import re
 
-def test_1(page: Page):
+def test1(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test1.json"))
     # Подмена значений счетчиков на "1000"
@@ -14,7 +14,7 @@ def test_1(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test1_' + now_day + '.png')
 
-def test_2(page: Page):
+def test2(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test2.json"))
     # Подмена значений счетчиков на "1001"
@@ -23,7 +23,7 @@ def test_2(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test2_' + now_day + '.png')
 
-def test_3(page: Page):
+def test3(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test3.json"))
     # Подмена значений счетчиков на "999"
@@ -32,7 +32,7 @@ def test_3(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test3_' + now_day + '.png')
 
-def test_4(page: Page):
+def test4(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test4.json"))
     # Подмена значений счетчиков на "1000000"
@@ -41,7 +41,7 @@ def test_4(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test4_' + now_day + '.png')
 
-def test_5(page: Page):
+def test5(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test5.json"))
     # Подмена значений счетчиков на "1000001"
@@ -50,7 +50,7 @@ def test_5(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test5_' + now_day + '.png')
 
-def test_6(page: Page):
+def test6(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test6.json"))
     # Подмена значений счетчиков на "999999"
@@ -59,7 +59,7 @@ def test_6(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test6_' + now_day + '.png')
 
-def test_7(page: Page):
+def test7(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test7.json"))
     # Подмена значений счетчиков на "1000000000"
@@ -68,7 +68,7 @@ def test_7(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test7_' + now_day + '.png')
 
-def test_8(page: Page):
+def test8(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test8.json"))
     # Подмена значений счетчиков на "1000000001"
@@ -77,7 +77,7 @@ def test_8(page: Page):
     now_day = datetime.now().strftime('%Y.%m.%d_%H.%M.%S')
     page.screenshot(type='png', path='output/screen_test8_' + now_day + '.png')
 
-def test_9(page: Page):
+def test9(page: Page):
 
     page.route("**/web/1/charity/ecoImpact/init", lambda route: route.fulfill(path="responses/data_test9.json"))
     # Подмена значений счетчиков на "999999999"
